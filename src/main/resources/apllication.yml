@@ -1,0 +1,21 @@
+spring:
+ datasource:
+  url:jdbc:mysql://{127.0.0.1:3306}/{boot}
+  username:{root}
+  password:{123456}
+  driver-class-name:org.gjt.mm.mysql.Driver
+ mybatis:
+ type-aliases-package:com.wooyoo.learning.dao.domain
+ mapper-location:
+  - mappers/ProductMapper.xml
+ redis:
+ database:3
+ host:localhost
+ port:6379
+ password:
+ timeout:0
+ pool:
+  max-active:8
+  max-idle:8
+  min-idle:0
+  max-wait:-1
